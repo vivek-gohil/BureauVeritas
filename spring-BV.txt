@@ -1,0 +1,19 @@
+Spring Core - Dependency Injection
+
+1.What is Dependency? - Done
+2.What is Injection? - How to do the injection using Spring ? - Done
+3.What is Dependency Injection In Spring? - Done
+5.Auto Wiring  - Done
+	1. ByName
+	2. ByType
+
+
+	type 	name 	   Value
+	int  	x 	=  10;
+	Address address = new Address();
+	String  s       = new String("Hi");
+
+
+6. Scope of spring bean - default is Singleton and you can set as prototype (create new object everytime)
+
+_. Spring application bean life cyle.
