@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="address" class="com.bv.pojo.Address">
+		<constructor-arg name="buildingName" value="" />
+		<constructor-arg name="addressId" value="0" />
+		<constructor-arg name="street" value="" />
+		<constructor-arg name="city" value="" />
+		<constructor-arg name="pin" value="" />
+	</bean>
+
+	<!--Manual Wiring and Constructor Injection -->
+	<!-- <bean id="employee" class="com.bv.pojo.Employee"> -->
+	<!-- <constructor-arg name="name" value="" /> -->
+	<!-- <constructor-arg name="salary" value="0.0" /> -->
+	<!-- <constructor-arg name="employeeId" value="0" /> -->
+	<!-- <constructor-arg name="homeAddress" ref="address" /> -->
+	<!-- </bean> -->
+
+	<bean id="employee" class="com.bv.pojo.Employee" autowire="byType">
+		<!-- <constructor-arg name="homeAddress" ref="address" /> -->
+	</bean>
+
+</beans>
